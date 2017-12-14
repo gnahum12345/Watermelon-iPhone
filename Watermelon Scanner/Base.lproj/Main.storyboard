@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Watermelon_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NB-hs-xuw">
+                                <rect key="frame" x="137" y="547" width="100" height="100"/>
+                                <state key="normal" image="Watermelon"/>
+                                <connections>
+                                    <action selector="captureImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dpd-XB-Tsp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--.--%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-sA-ugo">
+                                <rect key="frame" x="145" y="28" width="85" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="ZT6-Fh-cui"/>
+                                    <constraint firstAttribute="height" constant="46" id="etb-oI-W0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-SG-Hmc">
+                                <rect key="frame" x="16" y="120" width="343" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DfC-SG-Hmc" secondAttribute="trailing" id="DRL-f0-Pri"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DfC-SG-Hmc" secondAttribute="leading" id="Qmr-fo-fDZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0NB-hs-xuw" secondAttribute="bottom" constant="20" id="TwC-mE-8ow"/>
+                            <constraint firstItem="0NB-hs-xuw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zqh-eP-CYv"/>
+                            <constraint firstItem="0NB-hs-xuw" firstAttribute="top" secondItem="DfC-SG-Hmc" secondAttribute="bottom" constant="84" id="aPL-en-nyk"/>
+                            <constraint firstItem="HkX-sA-ugo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZR-6w-ZNj"/>
+                            <constraint firstItem="HkX-sA-ugo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="iYh-hO-TwN"/>
+                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="top" secondItem="HkX-sA-ugo" secondAttribute="bottom" constant="46" id="so8-Md-VOm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frameForCapture" destination="8bC-Xf-vdC" id="RqA-2z-3z2"/>
+                        <outlet property="percent" destination="8bC-Xf-vdC" id="6pe-iz-HfW"/>
+                        <outlet property="previewView" destination="DfC-SG-Hmc" id="9NR-tx-4WM"/>
+                        <outlet property="ripenessLabel" destination="HkX-sA-ugo" id="AZV-SJ-Yvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Watermelon" width="100" height="100"/>
+    </resources>
+</document>

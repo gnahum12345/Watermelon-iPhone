@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E9F8AFB1D4279D400F25937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8AFA1D4279D400F25937 /* AppDelegate.swift */; };
+		0E9F8AFD1D4279D400F25937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8AFC1D4279D400F25937 /* ViewController.swift */; };
+		0E9F8B001D4279D400F25937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9F8AFE1D4279D400F25937 /* Main.storyboard */; };
+		0E9F8B021D4279D400F25937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9F8B011D4279D400F25937 /* Assets.xcassets */; };
+		0E9F8B051D4279D400F25937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9F8B031D4279D400F25937 /* LaunchScreen.storyboard */; };
+		0E9F8B101D4279D400F25937 /* Watermelon_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8B0F1D4279D400F25937 /* Watermelon_ScannerTests.swift */; };
+		0E9F8B1B1D4279D400F25937 /* Watermelon_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8B1A1D4279D400F25937 /* Watermelon_ScannerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E9F8B0C1D4279D400F25937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E9F8AEF1D4279D400F25937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E9F8AF61D4279D400F25937;
+			remoteInfo = "Watermelon Scanner";
+		};
+		0E9F8B171D4279D400F25937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E9F8AEF1D4279D400F25937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E9F8AF61D4279D400F25937;
+			remoteInfo = "Watermelon Scanner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9F8AF71D4279D400F25937 /* Watermelon Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watermelon Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9F8AFA1D4279D400F25937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0E9F8AFC1D4279D400F25937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E9F8AFF1D4279D400F25937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E9F8B011D4279D400F25937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E9F8B041D4279D400F25937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E9F8B061D4279D400F25937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9F8B0B1D4279D400F25937 /* Watermelon ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watermelon ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9F8B0F1D4279D400F25937 /* Watermelon_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watermelon_ScannerTests.swift; sourceTree = "<group>"; };
+		0E9F8B111D4279D400F25937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9F8B161D4279D400F25937 /* Watermelon ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watermelon ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9F8B1A1D4279D400F25937 /* Watermelon_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watermelon_ScannerUITests.swift; sourceTree = "<group>"; };
+		0E9F8B1C1D4279D400F25937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E9F8AF41D4279D400F25937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B081D4279D400F25937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B131D4279D400F25937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9F8AEE1D4279D400F25937 = {
+			isa = PBXGroup;
+			children = (
+				0E9F8AF91D4279D400F25937 /* Watermelon Scanner */,
+				0E9F8B0E1D4279D400F25937 /* Watermelon ScannerTests */,
+				0E9F8B191D4279D400F25937 /* Watermelon ScannerUITests */,
+				0E9F8AF81D4279D400F25937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E9F8AF81D4279D400F25937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F8AF71D4279D400F25937 /* Watermelon Scanner.app */,
+				0E9F8B0B1D4279D400F25937 /* Watermelon ScannerTests.xctest */,
+				0E9F8B161D4279D400F25937 /* Watermelon ScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E9F8AF91D4279D400F25937 /* Watermelon Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F8AFA1D4279D400F25937 /* AppDelegate.swift */,
+				0E9F8AFC1D4279D400F25937 /* ViewController.swift */,
+				0E9F8AFE1D4279D400F25937 /* Main.storyboard */,
+				0E9F8B011D4279D400F25937 /* Assets.xcassets */,
+				0E9F8B031D4279D400F25937 /* LaunchScreen.storyboard */,
+				0E9F8B061D4279D400F25937 /* Info.plist */,
+			);
+			path = "Watermelon Scanner";
+			sourceTree = "<group>";
+		};
+		0E9F8B0E1D4279D400F25937 /* Watermelon ScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F8B0F1D4279D400F25937 /* Watermelon_ScannerTests.swift */,
+				0E9F8B111D4279D400F25937 /* Info.plist */,
+			);
+			path = "Watermelon ScannerTests";
+			sourceTree = "<group>";
+		};
+		0E9F8B191D4279D400F25937 /* Watermelon ScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F8B1A1D4279D400F25937 /* Watermelon_ScannerUITests.swift */,
+				0E9F8B1C1D4279D400F25937 /* Info.plist */,
+			);
+			path = "Watermelon ScannerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E9F8AF61D4279D400F25937 /* Watermelon Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9F8B1F1D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon Scanner" */;
+			buildPhases = (
+				0E9F8AF31D4279D400F25937 /* Sources */,
+				0E9F8AF41D4279D400F25937 /* Frameworks */,
+				0E9F8AF51D4279D400F25937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watermelon Scanner";
+			productName = "Watermelon Scanner";
+			productReference = 0E9F8AF71D4279D400F25937 /* Watermelon Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E9F8B0A1D4279D400F25937 /* Watermelon ScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9F8B221D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon ScannerTests" */;
+			buildPhases = (
+				0E9F8B071D4279D400F25937 /* Sources */,
+				0E9F8B081D4279D400F25937 /* Frameworks */,
+				0E9F8B091D4279D400F25937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E9F8B0D1D4279D400F25937 /* PBXTargetDependency */,
+			);
+			name = "Watermelon ScannerTests";
+			productName = "Watermelon ScannerTests";
+			productReference = 0E9F8B0B1D4279D400F25937 /* Watermelon ScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E9F8B151D4279D400F25937 /* Watermelon ScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9F8B251D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon ScannerUITests" */;
+			buildPhases = (
+				0E9F8B121D4279D400F25937 /* Sources */,
+				0E9F8B131D4279D400F25937 /* Frameworks */,
+				0E9F8B141D4279D400F25937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E9F8B181D4279D400F25937 /* PBXTargetDependency */,
+			);
+			name = "Watermelon ScannerUITests";
+			productName = "Watermelon ScannerUITests";
+			productReference = 0E9F8B161D4279D400F25937 /* Watermelon ScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E9F8AEF1D4279D400F25937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Gabriel;
+				TargetAttributes = {
+					0E9F8AF61D4279D400F25937 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = M234R3V5WK;
+						DevelopmentTeamName = "Gabriel Nahum (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					0E9F8B0A1D4279D400F25937 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = M234R3V5WK;
+						DevelopmentTeamName = "Gabriel Nahum (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0E9F8AF61D4279D400F25937;
+					};
+					0E9F8B151D4279D400F25937 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = M234R3V5WK;
+						DevelopmentTeamName = "Gabriel Nahum (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0E9F8AF61D4279D400F25937;
+					};
+				};
+			};
+			buildConfigurationList = 0E9F8AF21D4279D400F25937 /* Build configuration list for PBXProject "Watermelon Scanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E9F8AEE1D4279D400F25937;
+			productRefGroup = 0E9F8AF81D4279D400F25937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E9F8AF61D4279D400F25937 /* Watermelon Scanner */,
+				0E9F8B0A1D4279D400F25937 /* Watermelon ScannerTests */,
+				0E9F8B151D4279D400F25937 /* Watermelon ScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E9F8AF51D4279D400F25937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9F8B051D4279D400F25937 /* LaunchScreen.storyboard in Resources */,
+				0E9F8B021D4279D400F25937 /* Assets.xcassets in Resources */,
+				0E9F8B001D4279D400F25937 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B091D4279D400F25937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B141D4279D400F25937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E9F8AF31D4279D400F25937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9F8AFD1D4279D400F25937 /* ViewController.swift in Sources */,
+				0E9F8AFB1D4279D400F25937 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B071D4279D400F25937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9F8B101D4279D400F25937 /* Watermelon_ScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9F8B121D4279D400F25937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9F8B1B1D4279D400F25937 /* Watermelon_ScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E9F8B0D1D4279D400F25937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E9F8AF61D4279D400F25937 /* Watermelon Scanner */;
+			targetProxy = 0E9F8B0C1D4279D400F25937 /* PBXContainerItemProxy */;
+		};
+		0E9F8B181D4279D400F25937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E9F8AF61D4279D400F25937 /* Watermelon Scanner */;
+			targetProxy = 0E9F8B171D4279D400F25937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E9F8AFE1D4279D400F25937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9F8AFF1D4279D400F25937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E9F8B031D4279D400F25937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9F8B041D4279D400F25937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E9F8B1D1D4279D400F25937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E9F8B1E1D4279D400F25937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E9F8B201D4279D400F25937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Watermelon Scanner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0E9F8B211D4279D400F25937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Watermelon Scanner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0E9F8B231D4279D400F25937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Watermelon ScannerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watermelon Scanner.app/Watermelon Scanner";
+			};
+			name = Debug;
+		};
+		0E9F8B241D4279D400F25937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Watermelon ScannerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watermelon Scanner.app/Watermelon Scanner";
+			};
+			name = Release;
+		};
+		0E9F8B261D4279D400F25937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watermelon ScannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Watermelon Scanner";
+			};
+			name = Debug;
+		};
+		0E9F8B271D4279D400F25937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watermelon ScannerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Nahum.Watermelon-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Watermelon Scanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E9F8AF21D4279D400F25937 /* Build configuration list for PBXProject "Watermelon Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9F8B1D1D4279D400F25937 /* Debug */,
+				0E9F8B1E1D4279D400F25937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E9F8B1F1D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9F8B201D4279D400F25937 /* Debug */,
+				0E9F8B211D4279D400F25937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0E9F8B221D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon ScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9F8B231D4279D400F25937 /* Debug */,
+				0E9F8B241D4279D400F25937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0E9F8B251D4279D400F25937 /* Build configuration list for PBXNativeTarget "Watermelon ScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9F8B261D4279D400F25937 /* Debug */,
+				0E9F8B271D4279D400F25937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E9F8AEF1D4279D400F25937 /* Project object */;
+}
