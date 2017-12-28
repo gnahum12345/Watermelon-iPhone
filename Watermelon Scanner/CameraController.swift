@@ -210,7 +210,7 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
         guard let captureSession = captureSession, captureSession.isRunning else { completion(nil, CameraControllerError.captureSessionIsMissing); return }
 
         let settings = AVCapturePhotoSettings()
-        settings.flashMode = self.flashMode
+//        settings.flashMode = self.flashMode
 
         self.photoOutput?.capturePhoto(with: settings, delegate: self)
         self.photoCaptureCompletionBlock = completion
@@ -222,7 +222,7 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
 
         else if let buffer = photoSampleBuffer, let data = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: buffer, previewPhotoSampleBuffer: nil),
             let image = UIImage(data: data) {
-
+            
             self.photoCaptureCompletionBlock?(image, nil)
         }
 
