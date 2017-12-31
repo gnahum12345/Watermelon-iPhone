@@ -30,34 +30,42 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--.--%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-sA-ugo">
-                                <rect key="frame" x="145" y="28" width="85" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="ZT6-Fh-cui"/>
-                                    <constraint firstAttribute="height" constant="46" id="etb-oI-W0t"/>
-                                </constraints>
+                                <rect key="frame" x="147" y="28" width="82" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j4T-6e-AUK">
+                                <rect key="frame" x="16" y="82" width="343" height="2"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <color key="progressTintColor" red="1" green="0.19970858752848542" blue="0.10387646883574431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-SG-Hmc">
-                                <rect key="frame" x="16" y="120" width="343" height="343"/>
-                                <color key="backgroundColor" red="1" green="0.018721711901257154" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <color key="backgroundColor" red="0.0" green="0.077069251332482658" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4xa-C1-cjn"/>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KA7-pi-t23"/>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="centerX" secondItem="HkX-sA-ugo" secondAttribute="centerX" id="LTv-75-yse"/>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="UFz-xt-h1c"/>
-                            <constraint firstItem="0NB-hs-xuw" firstAttribute="top" secondItem="DfC-SG-Hmc" secondAttribute="bottom" constant="84" id="Vjn-tY-4OJ"/>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="top" secondItem="HkX-sA-ugo" secondAttribute="bottom" constant="46" id="gln-CG-WAg"/>
-                            <constraint firstAttribute="bottom" secondItem="DfC-SG-Hmc" secondAttribute="bottom" constant="204" id="jkj-Ge-V2L"/>
-                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="centerX" secondItem="0NB-hs-xuw" secondAttribute="centerX" id="zTs-H7-gXh"/>
+                            <constraint firstItem="0NB-hs-xuw" firstAttribute="top" secondItem="DfC-SG-Hmc" secondAttribute="bottom" constant="42" id="3ZH-QA-wue"/>
+                            <constraint firstItem="j4T-6e-AUK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Tb-eZ-JUu"/>
+                            <constraint firstItem="j4T-6e-AUK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="A6h-jv-6y7"/>
+                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="centerX" secondItem="0NB-hs-xuw" secondAttribute="centerX" id="DBl-FU-sff"/>
+                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="top" secondItem="j4T-6e-AUK" secondAttribute="bottom" constant="78" id="DeV-I7-HLk"/>
+                            <constraint firstAttribute="bottom" secondItem="0NB-hs-xuw" secondAttribute="bottom" constant="20" symbolic="YES" id="Iig-f3-iER"/>
+                            <constraint firstItem="DfC-SG-Hmc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ttn-9U-yrh"/>
+                            <constraint firstItem="HkX-sA-ugo" firstAttribute="centerX" secondItem="j4T-6e-AUK" secondAttribute="centerX" id="YUg-2P-USm"/>
+                            <constraint firstItem="j4T-6e-AUK" firstAttribute="trailing" secondItem="DfC-SG-Hmc" secondAttribute="trailing" id="cEL-Yu-uHE"/>
+                            <constraint firstItem="j4T-6e-AUK" firstAttribute="leading" secondItem="DfC-SG-Hmc" secondAttribute="leading" id="dNr-Dz-rHP"/>
+                            <constraint firstItem="HkX-sA-ugo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="gT1-zW-TqJ"/>
+                            <constraint firstItem="j4T-6e-AUK" firstAttribute="top" secondItem="HkX-sA-ugo" secondAttribute="bottom" constant="8" symbolic="YES" id="rpT-Rb-wHt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="previewView" destination="DfC-SG-Hmc" id="9NR-tx-4WM"/>
+                        <outlet property="progressBar" destination="j4T-6e-AUK" id="jPs-41-5cG"/>
                         <outlet property="ripenessLabel" destination="HkX-sA-ugo" id="AZV-SJ-Yvh"/>
                         <outlet property="screenView" destination="8bC-Xf-vdC" id="AQ6-YA-MJX"/>
                     </connections>

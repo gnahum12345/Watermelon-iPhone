@@ -58,7 +58,8 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
         func configureCaptureDevices() throws {
             let session = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
             let devices = session.devices
-
+            let settings = AVCapturePhotoSettings()
+            settings.flashMode = .on
 
             for camera in devices {
                 if camera.position == .back {
@@ -66,6 +67,8 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
                     try camera.lockForConfiguration()
                     camera.focusMode = .continuousAutoFocus
                     camera.unlockForConfiguration()
+                    
+                    
                 }
             }
 
@@ -184,10 +187,14 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
         self.previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         self.previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
         self.previewLayer?.connection?.videoOrientation = .portrait
-
+        
         view.layer.insertSublayer(self.previewLayer!, at: 0)
         self.previewLayer?.frame = view.frame
+        self.previewLayer?.position = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
         
+        self.previewLayer?.bounds = view.bounds
+        
+        //Turning on Flash
         //Flash Gesture
         toggleFlashGestureRecognizer.direction = .up
         toggleFlashGestureRecognizer.addTarget(self, action: #selector(self.toggleFlash))
