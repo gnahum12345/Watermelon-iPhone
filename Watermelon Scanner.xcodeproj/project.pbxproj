@@ -15,6 +15,7 @@
 		0E9F8B101D4279D400F25937 /* Watermelon_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8B0F1D4279D400F25937 /* Watermelon_ScannerTests.swift */; };
 		0E9F8B1B1D4279D400F25937 /* Watermelon_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F8B1A1D4279D400F25937 /* Watermelon_ScannerUITests.swift */; };
 		C08B5EC41FF1D1F700879245 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B5EC31FF1D1F700879245 /* CameraController.swift */; };
+		C0F513481FF97B76000958C4 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F513471FF97B76000958C4 /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0E9F8B1A1D4279D400F25937 /* Watermelon_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watermelon_ScannerUITests.swift; sourceTree = "<group>"; };
 		0E9F8B1C1D4279D400F25937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C08B5EC31FF1D1F700879245 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		C0F513471FF97B76000958C4 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0E9F8AFA1D4279D400F25937 /* AppDelegate.swift */,
 				0E9F8AFC1D4279D400F25937 /* ViewController.swift */,
 				0E9F8AFE1D4279D400F25937 /* Main.storyboard */,
+				C0F513471FF97B76000958C4 /* HistoryController.swift */,
 				0E9F8B011D4279D400F25937 /* Assets.xcassets */,
 				0E9F8B031D4279D400F25937 /* LaunchScreen.storyboard */,
 				0E9F8B061D4279D400F25937 /* Info.plist */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F513481FF97B76000958C4 /* HistoryController.swift in Sources */,
 				C08B5EC41FF1D1F700879245 /* CameraController.swift in Sources */,
 				0E9F8AFD1D4279D400F25937 /* ViewController.swift in Sources */,
 				0E9F8AFB1D4279D400F25937 /* AppDelegate.swift in Sources */,

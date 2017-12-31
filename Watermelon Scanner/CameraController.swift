@@ -192,8 +192,6 @@ class CameraController: NSObject, AVCapturePhotoCaptureDelegate {
         self.previewLayer?.frame = view.frame
         self.previewLayer?.position = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
         
-        self.previewLayer?.bounds = view.bounds
-        
         //Turning on Flash
         //Flash Gesture
         toggleFlashGestureRecognizer.direction = .up
