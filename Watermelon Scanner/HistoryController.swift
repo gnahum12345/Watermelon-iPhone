@@ -71,6 +71,7 @@ class HistoryController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         appDelegate.dataScan.set(data, forKey: "Scan \(count)")
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryCell
         
