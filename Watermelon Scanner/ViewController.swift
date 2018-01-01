@@ -114,9 +114,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
             self.storeResults(img: image, percent: percent)
             print(image)
             print(image.description)
-//            try? PHPhotoLibrary.shared().performChangesAndWait {
-//                PHAssetChangeRequest.creationRequestForAsset(from: image)
-//            }
+            
         }
         self.alertUser()
     }
@@ -124,7 +122,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         var count = appDelegate.count.integer(forKey: "count")
-        let data = ["image \(count)": img, "percentage \(count)": percent, "User rating \(count)": 0.0] as [String : Any]
+        let data = ["image \(count)": img, "percentage \(count)": percent, "User rating \(count)": -1.0] as [String : Any]
         count += 1
         appDelegate.count.set(count, forKey: "count")
         appDelegate.dataScan.set(data, forKey: "Scan \(count)")
@@ -149,14 +147,17 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     }
+   
     func distanceFromPerfect(_ color: UIColor) -> Double{
         let square = {(num: Int) -> Double in return pow(Double(num),2)}
       
-        let disRed = color.redValue - ideal_red
-        let disGreen = color.blueValue - ideal_green
-        let disBlue = color.greenValue - ideal_blue
+        let disRed = ideal_red - color.redValue
+        let disGreen = ideal_green - color.greenValue
+        let disBlue = ideal_blue - color.blueValue
         
-        return pow(square(disRed) + square(disGreen) + square(disBlue), 0.5)
+        let distance = pow(square(disRed) + square(disGreen) + square(disBlue), 0.5)
+        let maxDistance  = pow(square(ideal_red) + square(ideal_blue) + square(ideal_green), 0.5)
+        return 100 - ((distance/maxDistance)*100)
         
     }
 
