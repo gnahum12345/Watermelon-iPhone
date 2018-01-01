@@ -23,14 +23,15 @@ class HistoryController: UIViewController, UITableViewDelegate, UITableViewDataS
         changeViewsGestureRecognizer.addTarget(self, action: #selector(self.changeViews))
         view.addGestureRecognizer(changeViewsGestureRecognizer)
     }
+    
     @objc func changeViews(){
-        print("I did another edge pan gesture")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "scanScreen") as! ViewController
         
         self.present(resultViewController, animated:true, completion:nil)
     }
+    
     func loadScans(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -53,11 +54,7 @@ class HistoryController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        return []
+        return false
     }
     
     func changeStarRating(_ cosmosView: CosmosView){

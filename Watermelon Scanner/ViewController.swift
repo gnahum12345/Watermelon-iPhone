@@ -79,7 +79,6 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
         
     }
     @objc func changeViews(){
-        print("I did an edge pan gesture")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "historyController") as! HistoryController
@@ -157,7 +156,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
         
         let distance = pow(square(disRed) + square(disGreen) + square(disBlue), 0.5)
         let maxDistance  = pow(square(ideal_red) + square(ideal_blue) + square(ideal_green), 0.5)
-        return 100 - ((distance/maxDistance)*100)
+        return 1.0 - ((distance/maxDistance))
         
     }
 
