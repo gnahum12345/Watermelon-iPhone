@@ -13,7 +13,7 @@
         <!--ScanScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="scanScreen" title="ScanScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Watermelon_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scanScreen" title="ScanScreen" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Watermelon_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
                             </progressView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-SG-Hmc">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>
-                                <color key="backgroundColor" red="0.0" green="0.077069251332482658" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,7 +77,7 @@
         <!--HistoryController-->
         <scene sceneID="eqe-Nu-hQF">
             <objects>
-                <viewController storyboardIdentifier="historyController" title="HistoryController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aI2-LJ-V06" customClass="HistoryController" customModule="Watermelon_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="historyController" title="HistoryController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aI2-LJ-V06" customClass="HistoryController" customModule="Watermelon_Scanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6VH-LR-RpG"/>
                         <viewControllerLayoutGuide type="bottom" id="zOd-Hf-9B5"/>
@@ -85,12 +85,105 @@
                     <view key="view" contentMode="scaleToFill" id="pD9-BC-gnX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Szj-Y4-0P1">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="QVz-vd-fQi" customClass="HistoryCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="historyCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QVz-vd-fQi" id="SGb-84-Lpj" customClass="HistoryCell" customModule="Watermelon_Scanner" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-wy-Ea3">
+                                                    <rect key="frame" x="14" y="4" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="qav-F3-6iI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqU-dm-939" customClass="CosmosView" customModule="Watermelon_Scanner" customModuleProvider="target">
+                                                    <rect key="frame" x="102" y="64" width="152" height="20"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="0.00"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Given Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peH-Cw-aIB">
+                                                    <rect key="frame" x="102" y="35" width="102" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW7-T1-dAH">
+                                                    <rect key="frame" x="219" y="35" width="35" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bvc-wy-Ea3" firstAttribute="leading" secondItem="SGb-84-Lpj" secondAttribute="leadingMargin" constant="-1" id="2NF-X4-eZI"/>
+                                                <constraint firstItem="bvc-wy-Ea3" firstAttribute="centerY" secondItem="SGb-84-Lpj" secondAttribute="centerY" id="4br-Mt-MUG"/>
+                                                <constraint firstAttribute="trailing" secondItem="vW7-T1-dAH" secondAttribute="trailing" constant="121" id="8As-5T-hMY"/>
+                                                <constraint firstItem="bvc-wy-Ea3" firstAttribute="bottom" secondItem="iqU-dm-939" secondAttribute="bottom" id="JiX-Ia-1Yj"/>
+                                                <constraint firstItem="peH-Cw-aIB" firstAttribute="leading" secondItem="iqU-dm-939" secondAttribute="leading" id="ePV-Ou-zQr"/>
+                                                <constraint firstItem="vW7-T1-dAH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="peH-Cw-aIB" secondAttribute="trailing" constant="8" symbolic="YES" id="jtb-MN-p0g"/>
+                                                <constraint firstItem="peH-Cw-aIB" firstAttribute="leading" secondItem="bvc-wy-Ea3" secondAttribute="trailing" constant="8" symbolic="YES" id="m6a-Ae-LNb"/>
+                                                <constraint firstItem="peH-Cw-aIB" firstAttribute="baseline" secondItem="vW7-T1-dAH" secondAttribute="baseline" id="qg3-0N-HTz"/>
+                                                <constraint firstItem="iqU-dm-939" firstAttribute="top" secondItem="peH-Cw-aIB" secondAttribute="bottom" constant="8" symbolic="YES" id="qjc-5p-mbV"/>
+                                                <constraint firstItem="peH-Cw-aIB" firstAttribute="centerY" secondItem="SGb-84-Lpj" secondAttribute="centerY" id="wHc-Fb-gT4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="algorithmRating" destination="vW7-T1-dAH" id="dUo-HB-YTf"/>
+                                            <outlet property="fruitPic" destination="bvc-wy-Ea3" id="3kZ-Uf-CUX"/>
+                                            <outlet property="rating" destination="iqU-dm-939" id="HUw-3b-8re"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRR-xB-7Dw">
+                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Watermelon" id="sAG-ly-LTU">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="egi-gB-MAL">
+                                            <connections>
+                                                <action selector="back:" destination="aI2-LJ-V06" id="Tdr-as-har"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Szj-Y4-0P1" id="Vhw-VL-HHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bu2-q2-70b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="67"/>
+            <point key="canvasLocation" x="816.79999999999995" y="66.11694152923539"/>
         </scene>
     </scenes>
     <resources>

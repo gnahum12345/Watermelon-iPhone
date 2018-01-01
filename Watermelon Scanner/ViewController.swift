@@ -80,6 +80,11 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
     }
     @objc func changeViews(){
         print("I did an edge pan gesture")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "historyController") as! HistoryController
+        
+        self.present(resultViewController, animated:true, completion:nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -103,9 +108,10 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
                 return
             }
             
-            
+        
             let percent = self.analyze(img: image)
             self.updatePercentage(percent: percent)
+            self.storeResults(img: image, percent: percent)
             print(image)
             print(image.description)
 //            try? PHPhotoLibrary.shared().performChangesAndWait {
@@ -113,6 +119,16 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
 //            }
         }
         self.alertUser()
+    }
+    func storeResults(img: UIImage, percent: Double){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        var count = appDelegate.count.integer(forKey: "count")
+        let data = ["image \(count)": img, "percentage \(count)": percent, "User rating \(count)": 0.0] as [String : Any]
+        count += 1
+        appDelegate.count.set(count, forKey: "count")
+        appDelegate.dataScan.set(data, forKey: "Scan \(count)")
+    
     }
     
     func alertUser(){
@@ -156,7 +172,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate{
         return UIColor.black
     }
     func analyze(img: UIImage) -> Double {
-        //
+
         let height = Int(img.size.height)
         let width = Int(img.size.width)
         var avg_red = 0
